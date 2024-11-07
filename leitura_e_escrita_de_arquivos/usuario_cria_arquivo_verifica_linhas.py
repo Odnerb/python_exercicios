@@ -3,12 +3,12 @@ Faça um programa que receba do usuário o nome de um arquivo texto e mostre
 na tela quantas linhas este arquivo possuí.
 """
 
-print("Digite o nome do arquivo a ser criado: ")
+print("Digite o nome do arquivo a ser criado ou existente: ")
 try:
     arquivo = input()
     nome = arquivo
-    with open(f"{arquivo}.txt", "w", encoding="UTF-8") as arquivo:
-        print(f"O arquivo {nome} foi criado.")
+    with open(f"{arquivo}.txt", "a", encoding="UTF-8") as arquivo:
+        print(f"Arquivo {nome} aberto.")
         while True:
             texto = input()
             if texto != '0':
