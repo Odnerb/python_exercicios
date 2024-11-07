@@ -11,7 +11,7 @@ try:
     with open(f"{arquivo}.txt", "w", encoding="UTF-8") as arquivo:
         print(f"O arquivo {nome} foi criado.")
         for c in nome:
-            if c in ['a', 'e', 'i', 'o', 'u']:
+            if c.lower() in ['a', 'e', 'i', 'o', 'u']:
                 vogais.append(c)
             else:
                 consoantes.append(c)
