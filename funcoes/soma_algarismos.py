@@ -13,8 +13,9 @@ def soma_algarismos(numero):
     return "Número inválido."
 
 
-print('Informe um número para somar seus algarismos')
-numero = input("Informe o número: ")
+if __name__ == '__main__':
+    print('Informe um número para somar seus algarismos')
+    numero = input("Informe o número: ")
 
-print(soma_algarismos(numero))
+    print(soma_algarismos(numero))
 
