@@ -4,10 +4,10 @@ Algoritmo que calcula fatorial de um número inteiro positivo
 
 
 def fator_primo(n):
-    n = int(n)
-    fatorial = n
     try:
-        print(f"{n}! = ", end=" ")
+        n = int(n)
+        fatorial = n
+        print(f"{n}! = ", end=f" {n} * ")
         for c in range(fatorial-1, 0, -1):
             fatorial = fatorial * c
             if c != 1:
@@ -19,6 +19,6 @@ def fator_primo(n):
         return f"OPS: Um erro inesperado aconteceu: {exc}"
 
 
-numero = input('Número inteiro: ')
-
-print(fator_primo(numero))
+if __name__ == '__main__':
+    numero = input('Número inteiro: ')
+    print(fator_primo(numero))

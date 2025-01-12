@@ -29,6 +29,7 @@ def fator_primo(n):
         return f"OPS: Um erro inesperado aconteceu: {exc}"
 
 
-numero = input('Número inteiro: ')
+if __name__ == '__main__':
+    numero = input('Número inteiro: ')
 
-print(fator_primo(numero))
+    print(fator_primo(numero))
