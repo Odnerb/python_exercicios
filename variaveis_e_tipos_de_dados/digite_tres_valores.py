@@ -10,8 +10,3 @@ try:
 except (ValueError, KeyboardInterrupt) as exc:
     print("Insira somente valores inteiros!")
     print(f"Oops! Ocorreu um erro: {exc}")
-
-
-
-
-

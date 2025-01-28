@@ -7,5 +7,3 @@ try:
     print(num)
 except ValueError as exc:
     print(f"Oops! Ocorreu um erro: {exc}")
-
-
