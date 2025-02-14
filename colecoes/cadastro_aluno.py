@@ -37,9 +37,9 @@ for c in range(5):
                   'Média trabalhos': sum(media_trabalhos)/4,
                   'Nota final': nota_final})
 
-    media_provas = []
-    media_trabalhos = []
-    nota_final = 0
+    media_provas: list = []
+    media_trabalhos: list = []
+    nota_final: int = 0
 
 if __name__ == "__main__":
     melhor_aluno: int = 0
